@@ -24,8 +24,3 @@ async def bot_start(message: types.Message):
     count = db.count_users()[0]
     msg = f"{message.from_user.full_name} bazaga qo'shildi.\nBazada {count} ta foydalanuvchi bor."
     await bot.send_message(chat_id=ADMINS[0], text=msg)
-
-
-@dp.message_handler(text="dfcgvh")
-async def fgvh(msd: types.Message):
-    await msd.answer("dfghj")
